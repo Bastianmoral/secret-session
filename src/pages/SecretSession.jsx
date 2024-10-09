@@ -16,7 +16,7 @@ const SecretSession = () => {
       </div>
       <div className="right-column">
         <div className="session-info">
-          <p><i className="fas fa-calendar-alt"></i> Tu entrada a la Secret Session ha sido confirmada para este 15 de octubre</p>
+          <p><i className="fas fa-calendar-alt"></i> Tu entrada a la Secret Session ha sido confirmada para este 15 de octubre.</p>
           <p>Prepárate para una experiencia privada, incomparable y llena de misterio.</p>
 
           <p><i className="fas fa-clock"></i> Horario de 16:00 a 22:00 hrs.</p>
@@ -28,7 +28,7 @@ const SecretSession = () => {
             <a href="#!" onClick={() => setShowModal(true)}>Ver mapa estacionamiento.</a> {/* Modal para ambas versiones */}
           </p>
 
-          <p><i className="fas fa-tshirt"></i> Dress code: Dress to impress</p>
+          <p><i className="fas fa-tshirt"></i> Dress code: Dress to impress.</p>
 
           <p><i className="fas fa-envelope"></i> Esta invitación es intransferible, recuerda que el acceso es únicamente con lista.</p>
         </div>
