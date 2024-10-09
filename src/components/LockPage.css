@@ -1,0 +1,132 @@
+.lock-page-container {
+    display: flex;
+    justify-content: center; /* Centra ambos elementos */
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    color: rgba(255, 255, 255, 0.85); /* Color blanco más suave */
+    padding: 0 10px; /* Reducimos el padding */
+    box-sizing: border-box;
+    gap: 10px; /* Reducimos el espacio entre las columnas */
+}
+
+.left-column {
+    flex: 0.4; /* Reducimos un poco el espacio de la columna izquierda */
+    display: flex;
+    justify-content: flex-end; /* Alineamos más a la derecha */
+    align-items: center;
+}
+
+.right-column {
+    flex: 0.4; /* Reducimos un poco el espacio de la columna derecha */
+    padding: 10px; /* Reducimos el padding */
+    margin-left: -20px; /* Movemos la columna hacia la izquierda */
+}
+
+.lock-image {
+    object-fit: contain;
+    max-width: 90%; /* Ajustamos ligeramente el tamaño de la imagen del candado */
+    height: auto;
+}
+
+.logo-image {
+    object-fit: contain;
+    max-width: 90%; /* Ajustamos ligeramente el tamaño de la imagen del candado */
+    height: auto;
+}
+
+/* Countdown */
+.countdown {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.85); /* Cambiamos a blanco menos brillante */
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1024px) {
+    .lock-page-container {
+        max-width: 100%;
+        margin: 0 auto;
+        gap: 5px; /* Reducimos aún más el espacio entre las columnas en pantallas grandes */
+    }
+    .right-column {
+        max-width: 600px;
+        margin-right: 70px;
+    }
+
+    .left-column {
+        padding-left: 250px;
+        max-width: 400px;
+        margin-right: 0px;
+    }
+    .input-code {
+        font-size: 1rem;
+        width: 50%;
+        margin-left: 50px;
+    }
+
+    .submit-button {
+        font-size: 1rem;
+        width: 40%;
+        margin-left: 80px;
+        margin-top: 7px;
+    }
+    .countdown {
+        font-size: 2.5rem; /* Reducimos un poco el tamaño del countdown para pantallas grandes */
+    }
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .lock-page-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .invit-title{
+        max-width: 70%;
+        margin-left: 65px;
+    }
+    .right-column /*Esto es la aprte del input, el texto y el boton */ {
+        max-width: 100%;
+    }
+
+    .left-column /*Esto es el candado */{
+        max-height: 150px;
+        padding-top: 100px;
+    }
+
+    .lock-image {
+        max-width: 100%;
+        height: auto;
+        max-width: 150px; /* Reducir el tamaño máximo del candado */
+    }
+    .logo-image {
+        max-width: 100%;
+        height: auto;
+        max-width: 150px; /* Reducir el tamaño máximo del candado */
+    }
+
+    .input-code {
+        margin-left: 15px;
+        font-size: 1rem;
+        width: 60%;
+    }
+
+    .submit-button {
+        margin-top: 5px;
+        margin-left: 15px;
+        font-size: 0.5rem;
+        width: 60%;
+    }
+
+    .countdown {
+        font-size: 2rem; /* Ajustamos el tamaño del countdown en pantallas pequeñas */
+    }
+}

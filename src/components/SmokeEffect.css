@@ -1,0 +1,63 @@
+/* #smoke-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Evita que interfiera con los clics */
+    /*overflow: hidden;
+  }
+
+  .smoke {
+    position: absolute;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+    width: 10px;
+    height: 10px;
+    opacity: 0.5;
+    border-radius: 50%;
+    animation: smoke-rise 3s ease-out forwards;
+  }
+  
+  @keyframes smoke-rise {
+    0% {
+      transform: scale(0.5) translateY(0) translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(3) translateY(-200px) translateX(50px);
+      opacity: 0;
+    }
+  }
+   */
+
+   #smoke-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  
+  .smoke {
+    position: absolute;
+    background: radial-gradient(circle, rgba(188, 184, 184, 0.8), rgba(255, 255, 255, 0.2));
+    width: 17px; /* Tamaño inicial más grande */
+    height: 13px; /* Tamaño inicial más grande */
+    opacity: 0.6; /* Un poco más de opacidad */
+    border-radius: 50%;
+    animation: smoke-rise 3.5s ease-out forwards; /* Aumentar la duración de la animación */
+  }
+  
+  @keyframes smoke-rise {
+    0% {
+      transform: scale(1) translateY(0) translateX(0); /* Comienza más grande */
+      opacity: 1;
+    }
+    100% {
+      transform: scale(5) translateY(-300px) translateX(100px); /* Aumenta más el tamaño final y se desplaza más */
+      opacity: 0;
+    }
+  }
+  
