@@ -45,7 +45,7 @@ const SecretSession = () => {
       {showModal && (
         <div className="modal-overlay" onClick={() => setShowModal(false)}>
           <div className="modal-content">
-            <img src="src/assets/csc estacionamientos.jpg" alt="Mapa de estacionamientos" />
+            <img src="/csc estacionamientos.jpg" alt="Mapa de estacionamientos" />
           </div>
         </div>
       )}
